@@ -1,0 +1,26 @@
+.cover{
+    display:flex;
+    justify-content:space-around;
+    background-color:transparent;
+    align-items:center;
+    height:100px;
+    postion:sticky;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.logo{
+    width:400px
+}
+.center{
+    display:flex;
+    flex:6
+}
+.center>li{
+    margin-left:30px;
+}
+.right{
+    display:flex;
+    flex:2;
+}
+.right>div{
+    margin-left:15px
+}
