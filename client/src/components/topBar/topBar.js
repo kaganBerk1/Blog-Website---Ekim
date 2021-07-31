@@ -8,27 +8,28 @@ export default function topBar() {
                 <img className="logo" src={logo} alt="logo"></img>
             </div>
             <div className="center">
-                <ul className="center">
-                    <li>
+                <ul className="itemsCover">
+                    <li className="navItems">
                         HOME 
+                        
                     </li>
-                    <li>
+                    <li  className="navItems">
                         About Us
                     </li>
-                    <li>
+                    <li className="navItems">
                         All posts
                     </li>
-                    <li>
+                    <li  className="navItems">
                     Contact
                     </li>
                 </ul>
             </div>
             <div className="right">
-                <div>
-                    photo
+                <div className="searchIcon">
+                        <i class="fas fa-search"></i>
                 </div>
                 <div>
-                    search
+                    <img className="profileImage" src="https://images.pexels.com/photos/878784/pexels-photo-878784.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="profile photo"></img>
                 </div>
             </div>
         </div>

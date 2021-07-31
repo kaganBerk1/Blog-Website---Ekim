@@ -8,19 +8,64 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 .logo{
-    width:400px
+    width:400px;
+    flex:3;
+    cursor:pointer;
 }
 .center{
     display:flex;
-    flex:6
+    flex:6;
 }
-.center>li{
-    margin-left:30px;
+.center>ul{
+    display:flex;
+    flex:6;
+    align-items:center;
+    justify-content:center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
+.itemsCover{
+    background:transparent;
+}
+.navItems{
+    z-index:8;
+    margin-right:20px;
+    font-size:18px;
+    font-weight:300;
+    cursor:pointer;
+    background-color:transparent;
+    transition: 0.4s;
+
+
+}
+.navItems:hover{
+    margin-bottom:10px;
+    font-size:20px
+   
+}
+.dot{
+    z-index:7;
+    postion:absolute;
+    left:20px;
+}
+
+  
 .right{
     display:flex;
-    flex:2;
+    flex:3;
+    display:flex;
+    align-items:center;
 }
 .right>div{
-    margin-left:15px
+    margin-left:15px;
+
+}
+.profileImage{
+    width:75px;
+    border-radius:50px 20px;
+    cursor:pointer;
+}
+.searchIcon{
+    cursor:pointer;
 }
