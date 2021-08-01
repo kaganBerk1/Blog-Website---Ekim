@@ -1,0 +1,9 @@
+.postsAll{
+    margin:0 auto;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap; 
+    overflow-x:hidden ;
+    justify-content:center;
+    padding-top:50px;
+}

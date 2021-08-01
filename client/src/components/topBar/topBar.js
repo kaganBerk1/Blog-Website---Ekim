@@ -1,7 +1,11 @@
 import React from 'react'
 import "./topBar.css"
 import logo from "../../images/logo.png"
-export default function topBar() {
+export default function topBar(
+    {
+        isLogin=true
+    }
+) {
     return (
         <div className="cover">
             <div >
@@ -28,9 +32,9 @@ export default function topBar() {
                 <div className="searchIcon">
                         <i class="fas fa-search"></i>
                 </div>
-                <div>
+                {isLogin&&<div>
                     <img className="profileImage" src="https://images.pexels.com/photos/878784/pexels-photo-878784.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="profile photo"></img>
-                </div>
+                </div>}
             </div>
         </div>
     )

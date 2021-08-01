@@ -1,16 +1,26 @@
 .cover{
     display:flex;
     justify-content:space-around;
-    background-color:transparent;
+    background-color:#fff;
     align-items:center;
-    height:100px;
-    postion:sticky;
+    height:90px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top:0;
     font-family: 'Josefin Sans', sans-serif;
+    z-index:10;
+    border-radius:0 0 35px 35px;
+    transform: scale(1.03);
+    
 }
 .logo{
     width:400px;
     flex:3;
+    height:400px;
     cursor:pointer;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    
 }
 .center{
     display:flex;
@@ -24,6 +34,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    margin-right:80px
 }
 .itemsCover{
     background:transparent;
@@ -49,8 +60,7 @@
   
 .right{
     display:flex;
-    flex:3;
-    display:flex;
+    flex:2;
     align-items:center;
 }
 .right>div{
