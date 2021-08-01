@@ -1,0 +1,25 @@
+{
+  "name": "ekim",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "mongoose": "^5.13.5",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaganBerk1/ekim.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaganBerk1/ekim/issues"
+  },
+  "homepage": "https://github.com/kaganBerk1/ekim#readme",
+  "description": ""
+}
