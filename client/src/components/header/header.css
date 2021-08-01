@@ -1,5 +1,6 @@
 .header{
-    overflow-x:hidden  
+    overflow-x:hidden;  
+    overflow-y:hidden
 
 }
 .headerTitle{
@@ -33,6 +34,7 @@
     width:100%;
     height:600px;
     object-fit:fit;
+    overflow-y:hidden
 }
 .line{
     transform:scale(0.85);

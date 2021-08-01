@@ -9,7 +9,7 @@ export default function topBar(
     return (
         <div className="cover">
             <div >
-                <img className="logo" src={logo} alt="logo"></img>
+                <img className="logo" src={logo} alt="logo2"></img>
             </div>
             <div className="center">
                 <ul className="itemsCover">

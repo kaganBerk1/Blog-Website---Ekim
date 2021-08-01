@@ -6,7 +6,6 @@ function App() {
     <div className="App">
       <TopBar></TopBar>
       <HomePage></HomePage>
-      Ekim merdivenleri
     </div>
   );
 }
