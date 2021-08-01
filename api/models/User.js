@@ -1,4 +1,3 @@
-const { strict } = require("assert/strict");
 const mongoose = require("mongoose");
 
 const UserSchema = new mongoose.Schema(
