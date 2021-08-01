@@ -5,7 +5,7 @@ export default function Contact() {
         <div>
             <div className="title">
                 <span className="firstTitle">
-                    Bize Bu Bağlantılardan
+                    Aşağıdaki Bağlantılardan
                 </span>
                 <span className="secondTitle">
                     Ulaşabilirsiniz. 
