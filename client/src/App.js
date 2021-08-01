@@ -4,6 +4,7 @@ import About from "./pages/about/about"
 import Single from "./pages/single/single"
 import Contact from "./pages/contact/contact"
 import AllPosts from "./pages/allPosts/allPosts"
+import Login from "./pages/login/login"
 import "./App.css"
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       {/* <About></About> */}
       {/* <Single></Single> */}
       {/* <Contact></Contact> */}
-      <AllPosts></AllPosts>
+      {/* <AllPosts></AllPosts> */}
+      <Login></Login>
     </div>
   );
 }
