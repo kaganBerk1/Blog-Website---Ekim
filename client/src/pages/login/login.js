@@ -15,82 +15,33 @@ class LoginForm extends Component {
     };
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.validate = this.validate.bind(this);
-    this.validateOnChange = this.validateOnChange.bind(this);
+
+
   }
 
-  schema = Joi.object().keys({
-    username: Joi.string()
-      .label("Username")
-      .required(),
-    password: Joi.string()
-      .required()
-      .label("Password")
-  });
 
-  validate() {
-    const result = Joi.validate(
-      { username: this.state.username, password: this.state.password },
-      this.schema,
-      { abortEarly: false }
-    );
 
-    if (result.error === null) return;
-
-    const errors = {};
-
-    for (let item of result.error.details) {
-      errors[item.path[0]] = item.message;
-    }
-    return errors;
-  }
 
   handleSubmit(e) {
     e.preventDefault();
-
-    const errors = this.validate();
-
-    this.setState({ errors: errors || {} });
-
-    if (errors) return;
-
-    console.log(errors);
 
     console.log("Form Submitted.");
 
     this.setState({ submitSuccessfully: true });
   }
 
-  validateOnChange(currentTarget) {
-    const obj = { [currentTarget.name]: currentTarget.value };
 
-    const res = this.schema._inner.children.filter(
-      item => item.key === currentTarget.name
-    );
-
-    console.log(this.schema[currentTarget.name]);
-
-    const schema = { [currentTarget.name]: res[0].schema };
-
-    const { error } = Joi.validate({ obj }, schema);
-
-    return error ? error.details[0].message : null;
-  }
 
   handleInputChange({ currentTarget }) {
     const errors = { ...this.state.errors };
 
-    const errorMessage = this.validateOnChange(currentTarget);
-
-    if (errorMessage) errors[currentTarget.name] = errorMessage;
-    else delete errors[currentTarget.name];
 
     this.setState({ [currentTarget.name]: currentTarget.value, errors });
   }
   render() {
     return (
       <form className="login" onSubmit={this.handleSubmit}>
-        {this.state.submitSuccessfully && (
+{/*         {this.state.submitSuccessfully && (
           <div class="alert alert-success" role="alert">
             <h4 class="alert-heading">Form has been submitted!</h4>
             <p>
@@ -103,7 +54,7 @@ class LoginForm extends Component {
               name.
             </p>
           </div>
-        )}
+        )} */}
         <FormInputs
           onChange={this.handleInputChange}
           errors={this.state.errors}
@@ -124,7 +75,7 @@ class LoginForm extends Component {
           className="form"
 
         />
-        <button disabled={this.validate()} className="btn btn-primary" style={{marginTop:"20px"}}>
+        <button  className="btn btn-primary" style={{marginTop:"20px"}}>
           Login
         </button>
       </form>

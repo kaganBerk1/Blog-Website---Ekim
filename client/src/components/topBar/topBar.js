@@ -9,32 +9,34 @@ export default function topBar(
     return (
         <div className="cover">
             <div >
-                <img className="logo" src={logo} alt="logo2"></img>
+                <a href="/">
+                    <img className="logo"  src={logo} alt="logo2"></img>
+                </a>
             </div>
             <div className="center">
                 <ul className="itemsCover">
-                    <li className="navItems">
+                    <a href="/" className="navItems">
                         HOME 
-                        
-                    </li>
-                    <li  className="navItems">
+                    </a>
+                    <a href="/about"  className="navItems">
                         About Us
-                    </li>
-                    <li className="navItems">
+                    </a>
+                    <a href="/allposts" className="navItems">
                         All posts
-                    </li>
-                    <li  className="navItems">
+                    </a>
+                    <a href="/contact" className="navItems">
                     Contact
-                    </li>
+                    </a>
                 </ul>
             </div>
             <div className="right">
                 <div className="searchIcon">
                         <i class="fas fa-search"></i>
                 </div>
-                {isLogin&&<div>
+                {isLogin&&
+                <a href="/login">
                     <img className="profileImage" src="https://images.pexels.com/photos/878784/pexels-photo-878784.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="profile photo"></img>
-                </div>}
+                </a>}
             </div>
         </div>
     )

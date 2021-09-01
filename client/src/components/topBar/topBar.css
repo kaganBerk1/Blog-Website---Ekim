@@ -44,10 +44,12 @@
     cursor:pointer;
     background-color:transparent;
     transition: 0.5s;
-
+    text-decoration:none;
+    color:#000;
 
 }
 .navItems:hover{
+    color:#000;
    
     font-size:26px
    

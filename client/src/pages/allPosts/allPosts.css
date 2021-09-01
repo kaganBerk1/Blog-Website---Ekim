@@ -1,7 +1,8 @@
 .allPosts{
     display:flex;
+    justify-content:center;
     flex-wrap:wrap;
-    margin-left:20px;
+    
 }
 .title{
     display:flex;
