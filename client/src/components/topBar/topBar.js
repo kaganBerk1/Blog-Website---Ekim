@@ -31,7 +31,7 @@ export default function topBar(
             </div>
             <div className="right">
                 <div className="searchIcon">
-                        <i class="fas fa-search"></i>
+                        <i className="fas fa-search"></i>
                 </div>
                 {isLogin&&
                 <a href="/login">
