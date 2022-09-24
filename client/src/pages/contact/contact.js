@@ -21,8 +21,6 @@ export default function Contact() {
                 <span className="realState">@ekiMerdivenleri</span>
                 <span className="socialsSpan">Email</span>
                 <span className="realState">ekimMrdv@gmail.com</span>
-
-
             </div>
         </div>
     )
